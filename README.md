@@ -1,8 +1,9 @@
 # youtube-ublock-origin-filters
 
-! Paste these into 'My Filters' in ublock origin settings
+Paste these into 'My Filters' in ublock origin settings:
 
-! More video columns
+```
+! 4 video columns instead of 3
 www.youtube.com##.ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
 
 ! Hide shorts
@@ -22,3 +23,4 @@ www.youtube.com##ytd-rich-item-renderer:has(span:has-text(Streamed))
 
 ! Hide music Mix playlists
 www.youtube.com##ytd-rich-item-renderer:has(.ytBadgeShapeText:has-text(Mix))
+```
