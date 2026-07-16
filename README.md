@@ -23,4 +23,10 @@ www.youtube.com##ytd-rich-item-renderer:has(span:has-text(Streamed))
 
 ! Hide music Mix playlists
 www.youtube.com##ytd-rich-item-renderer:has(.ytBadgeShapeText:has-text(Mix))
+
+! Hide music reccs
+www.youtube.com##ytd-rich-item-renderer:has(.ytBadgeShapeIcon)
+
+! Only keep "New to you" badge (Top of home page)
+youtube.com##yt-chip-cloud-chip-renderer:not(:has-text(New to you))
 ```
